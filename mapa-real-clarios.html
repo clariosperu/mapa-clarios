@@ -112,16 +112,16 @@
   // estado del cliente — pedido explícito del usuario: "debe verse como
   // Google Maps", no círculos planos.
   function pinIcon(color){
-    var svg = '<svg width="28" height="40" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">'+
+    var svg = '<svg width="14" height="20" viewBox="0 0 28 40" xmlns="http://www.w3.org/2000/svg">'+
       '<path d="M14 0C6.3 0 0 6.3 0 14c0 10.5 14 26 14 26s14-15.5 14-26C28 6.3 21.7 0 14 0z" fill="'+color+'" stroke="#fff" stroke-width="2"/>'+
       '<circle cx="14" cy="14.5" r="5.5" fill="#fff"/>'+
       '</svg>';
     return L.divIcon({
       className: 'gmap-pin',
       html: svg,
-      iconSize: [28,40],
-      iconAnchor: [14,40],
-      popupAnchor: [0,-36],
+      iconSize: [14,20],
+      iconAnchor: [7,20],
+      popupAnchor: [0,-18],
     });
   }
 
